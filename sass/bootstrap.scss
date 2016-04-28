@@ -1,0 +1,42 @@
+@import "bootstrap/bootstrap";
+@import "bootstrap/theme";
+
+.affix {
+  top: 0;
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+}
+
+#nav-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+  div {
+    border-right: 1px solid black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div:last-child {
+    border-right: none;
+  }
+}
+
+.social-info {
+	list-style: none;
+  li {
+    display: inline-block;
+    float: right;
+    padding-left: 10px;
+  }
+}
+
+.search {
+	height: 60px;
+  background: red;
+  margin: 0;
+  padding: 0;
+}
