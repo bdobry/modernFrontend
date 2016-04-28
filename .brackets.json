@@ -1,17 +1,25 @@
 {
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
     "path": {
         "sass/bootstrap.scss": {
             "sass.enabled": true,
             "sass.options": {
                 "outputDir": "../css/",
                 "imagePath": null,
-                "sourceComments": "map",
+                "sourceComments": false,
                 "outputStyle": "nested"
             },
             "linting.collapsed": false
         },
-        "sass/bootstrap/*.scss": {
-            "sass.enabled": false,
+      "sass/bootstrap/bootstrap.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
             "linting.collapsed": false
         }
     }

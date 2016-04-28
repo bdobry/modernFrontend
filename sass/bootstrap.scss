@@ -1,5 +1,10 @@
 @import "bootstrap/bootstrap";
-@import "bootstrap/theme";
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(../fonts/glyphicons-halflings-regular.eot);
+  src: url(../fonts/glyphicons-halflings-regular.eot) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg) format("svg");
+}
 
 .affix {
   top: 0;
@@ -7,6 +12,7 @@
   z-index: 1001;
   width: 100%;
 }
+
 
 #nav-top {
   position: fixed;
@@ -26,7 +32,7 @@
 }
 
 .social-info {
-	list-style: none;
+  list-style: none;
   li {
     display: inline-block;
     float: right;
@@ -35,8 +41,7 @@
 }
 
 .search {
-	height: 60px;
-  background: red;
   margin: 0;
   padding: 0;
+  
 }
