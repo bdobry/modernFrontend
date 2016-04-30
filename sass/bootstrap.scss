@@ -49,9 +49,8 @@ $grey-dark: rgba(0, 0, 0, 0.6);
   }
 }
 
-#nav-middle-mobile,
 #nav-middle {
-  @include flex-center;
+  padding-top: 33px;
   height: 120px;
   margin-top: 40px;
   .input-group-addon,
@@ -212,7 +211,6 @@ hr {
   position: relative;
   float: left;
   overflow: hidden;
-  max-width: 480px;
   //  max-height: 100%;
   background: black;
   text-align: center;
@@ -579,6 +577,7 @@ footer {
     z-index: 1030;
   }
   #nav-middle {
+    padding-top: 0;
     height: 50px;
     margin-top: 60px;
     .form-control,
@@ -606,12 +605,43 @@ footer {
   }
 }
 
-@media all and (min-width: 771px) {
-  .navbar li a {
-    padding-right: 12px;
+@media all and (min-width: 768px) {
+  .list-group-image {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
   }
 }
 
-@media all and (max-width: 995px) and (min-width: 771px) {}
+@media all and (max-width: 995px) and (min-width: 771px) {
+  .navbar li a {
+    padding-right: 15px;
+  }
+  .btn-cart {
+    text-align: center;
+    float: none !important;
+  }
+}
 
-@media all and (max-width: 1199px) and (min-width: 995px) {}
+@media all and (max-width: 1199px) and (min-width: 994px) {
+  .navbar {
+    text-align: center;
+    li {
+      a {
+        padding-right: 35px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .navbar {
+    text-align: center;
+    li {
+      a {
+        padding-right: 33px;
+        padding-left: 33px;
+      }
+    }
+  }
+}

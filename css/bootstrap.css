@@ -5108,21 +5108,10 @@ td.visible-print {
   #nav-top span {
     margin-right: 10px; }
 
-#nav-middle-mobile,
 #nav-middle {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: center;
+  padding-top: 33px;
   height: 120px;
   margin-top: 40px; }
-  #nav-middle-mobile .input-group-addon,
-  #nav-middle-mobile .btn-info,
-  #nav-middle-mobile .form-control,
   #nav-middle .input-group-addon,
   #nav-middle .btn-info,
   #nav-middle .form-control {
@@ -5132,18 +5121,14 @@ td.visible-print {
     border: 2px solid rgba(0, 0, 0, 0.1);
     background: white;
     color: grey; }
-  #nav-middle-mobile .btn-info,
   #nav-middle .btn-info {
     border-left: none;
     border-right: none; }
-  #nav-middle-mobile .form-control,
   #nav-middle .form-control {
     border-right: none; }
-  #nav-middle-mobile .input-group-addon,
   #nav-middle .input-group-addon {
     background: #D1212C;
     padding: 0 20px; }
-    #nav-middle-mobile .input-group-addon span,
     #nav-middle .input-group-addon span {
       color: white; }
 
@@ -5258,7 +5243,6 @@ hr {
   position: relative;
   float: left;
   overflow: hidden;
-  max-width: 480px;
   background: black;
   text-align: center;
   cursor: pointer; }
@@ -5460,6 +5444,7 @@ footer {
     top: 0;
     z-index: 1030; }
   #nav-middle {
+    padding-top: 0;
     height: 50px;
     margin-top: 60px; }
     #nav-middle .form-control,
@@ -5478,8 +5463,30 @@ footer {
   .list-group-image {
     padding-left: 0; } }
 
-@media all and (min-width: 771px) {
+@media all and (min-width: 768px) {
+  .list-group-image {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px; } }
+
+@media all and (max-width: 995px) and (min-width: 771px) {
   .navbar li a {
-    padding-right: 12px; } }
+    padding-right: 15px; }
+  .btn-cart {
+    text-align: center;
+    float: none !important; } }
+
+@media all and (max-width: 1199px) and (min-width: 994px) {
+  .navbar {
+    text-align: center; }
+    .navbar li a {
+      padding-right: 35px; } }
+
+@media all and (min-width: 1200px) {
+  .navbar {
+    text-align: center; }
+    .navbar li a {
+      padding-right: 33px;
+      padding-left: 33px; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
