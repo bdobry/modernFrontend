@@ -169,6 +169,11 @@ $grey-dark: rgba(0, 0, 0, 0.6);
 }
 
 .btn-cart {
+  float: right !important;
+}
+
+.ratings {
+  float: left;
   display: inline-block;
 }
 
