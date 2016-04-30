@@ -10,9 +10,10 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false
+            "linting.collapsed": false,
+            "custom.work.toggleToolbar": true
         },
-      "sass/bootstrap/bootstrap.scss": {
+        "sass/bootstrap/bootstrap.scss": {
             "sass.enabled": true,
             "sass.options": {
                 "outputDir": "../../css/",
