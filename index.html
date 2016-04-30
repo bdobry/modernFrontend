@@ -22,7 +22,7 @@
 
 <body role="document">
 
-  <div id="nav-top" class="container-fluid">
+  <div id="nav-top" class="container-fluid  hidden-xs">
     <div class="container">
       <div class="col-xs-4"><span class="glyphicon glyphicon-shopping-cart"></span>free shipping on all order</div>
       <div class="col-xs-4"><span class="glyphicon glyphicon-euro"></span>100% money back guarantee</div>
@@ -31,6 +31,39 @@
   </div>
 
   <div id="nav-middle" class="container">
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">Logo</div>
+      <div class="col-sm-6 col-xs-12 search">
+        <div class="input-group">
+          <input class="form-control" placeholder="Search" type="text">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+              All Categories
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Category 1</a></li>
+              <li><a href="#">Category 2</a></li>
+              <li><a href="#">Category 3</a></li>
+              <li><a href="#">Category 4</a></li>
+              <li><a href="#">Category 5</a></li>
+            </ul>
+          </div>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+        </div>
+      </div>
+      <div class="col-sm-3 hidden-xs">
+        <ul class="social-info">
+          <li><a href="#">Fb</a></li>
+          <li><a href="#">Fb</a></li>
+          <li><a href="#">Fb</a></li>
+          <li><a href="#">Fb</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--
+  <div id="nav-middle-mobile" class="container visible-xs">
     <div class="row">
       <div class="col-xs-3">Logo</div>
       <div class="col-xs-6 search">
@@ -62,6 +95,7 @@
       </div>
     </div>
   </div>
+-->
 
   <!-- Sticky navbar -->
   <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="150">
@@ -91,6 +125,7 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
+  
 
   <div class="container-fluid">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -135,7 +170,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="fast-nav text-center">
+      <div class="col-xs-12 fast-nav text-center">
         <ul>
           <li>Go quickly to</li><span class="glyphicon glyphicon-arrow-right"></span>
           <li>Women</li>
@@ -151,7 +186,7 @@
     </div>
     <div class="row category">
 
-      <div class="col-sm-4 col-xs-6 grid ">
+      <div class="col-sm-4 col-xs-12 grid ">
         <figure class="effect-lily">
           <img src="http://placehold.it/350X250" alt="Olga Noga with Weronika" />
           <figcaption>
@@ -162,7 +197,7 @@
       </div>
 
 
-      <div class="col-sm-4 col-xs-6 grid">
+      <div class="col-sm-4 col-xs-12 grid">
         <figure class="effect-lily">
           <img src="http://placehold.it/350X250" alt="Olga Noga with Weronika" />
           <figcaption>
@@ -173,7 +208,7 @@
       </div>
 
 
-      <div class="col-sm-4 col-xs-6 grid">
+      <div class="col-sm-4 col-xs-12 grid">
         <figure class="effect-lily">
           <img src="http://placehold.it/350X250" alt="Olga Noga with Weronika" />
           <figcaption>
@@ -192,7 +227,7 @@
 
 
     <div id="products" class="row list-group">
-      <div class="col-sm-6 col-xs-6 grid grid-big height">
+      <div class="col-sm-6 col-xs-12 grid grid-big height">
         <figure class="effect-lily">
           <img src="http://placehold.it/700X600" alt="Olga Noga with Weronika" />
           <figcaption>
@@ -201,7 +236,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-xs-3 col-lg-3 item height">
+      <div class="col-xs-12 col-lg-3 item height">
         <div class="thumbnail">
           <img class="group list-group-image" src="http://placehold.it/650x650/000/fff" alt="" />
           <div class="caption">
@@ -225,7 +260,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-3 col-lg-3 item height">
+      <div class="col-xs-12 col-lg-3 item height">
         <div class="thumbnail">
           <img class="group list-group-image" src="http://placehold.it/650x650/000/fff" alt="" />
           <div class="caption">
@@ -484,10 +519,10 @@
     </div>
     <div class="row">
       <footer>
-        <div class="col-xs-3">
+        <div class="col-sm-3">
           <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
         </div>
-        <div class="col-xs-9 newsletter">
+        <div class="col-sm-9 outer-row newsletter">
           <div class="col-sm-6">
             <h3>sign up for our newsletter!</h3></div>
           <div class="col-sm-6">
@@ -497,18 +532,37 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-9">
-          <div class="col-xs-4">
+        <div class="col-sm-9 outer-row">
+          <div class="col-sm-4 col-xs-6">
             <ul>
               <p>INFORMATION</p>
               <li><a href="">Careers</a></li>
-              <li>Investor Relations</li>
-              <li>Press releases</li>
-              <li>Shop with Point</li>
+              <li><a href="">Investor Relations</a></li>
+              <li><a href="">Press releases</a></li>
+              <li><a href="">Shop with Point</a></li>
             </ul>
           </div>
-          <div class="col-xs-4">2</div>
-          <div class="col-xs-4">3</div>
+          <div class="col-sm-4 col-xs-6">
+            <ul>
+              <p>CUSTOMER CARE</p>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Investor Relations</a></li>
+              <li><a href="">Press releases</a></li>
+              <li><a href="">Shop with Point</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-center">
+            <ul>
+              <p>STORE INFORMATION</p>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Investor Relations</a></li>
+              <li><a href="">Press releases</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 text-center copyright">
+          <hr>
+          <p>® 2015 Psdfreebies. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
