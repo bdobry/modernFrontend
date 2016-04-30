@@ -589,10 +589,15 @@ footer {
       overflow: hidden;
     }
   }
+  #products {
+    display: block;
+  }
   .height {
-    float: inherit;
-//    display: block;
-    vertical-align: none;
+    float: left;
+    display: block;
+  }
+  .list-group-image {
+    padding-left: 0;
   }
 }
 

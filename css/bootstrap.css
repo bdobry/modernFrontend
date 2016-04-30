@@ -5466,9 +5466,13 @@ footer {
     max-width: 100%;
     max-height: 200px;
     overflow: hidden; }
+  #products {
+    display: block; }
   .height {
-    float: inherit;
-    vertical-align: none; } }
+    float: left;
+    display: block; }
+  .list-group-image {
+    padding-left: 0; } }
 
 @media all and (min-width: 771px) {
   .navbar li a {
