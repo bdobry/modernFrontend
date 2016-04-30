@@ -5164,7 +5164,11 @@ td.visible-print {
     .navbar .navbar-nav li.active {
       border-bottom: 7px #D1212C solid; }
   .navbar .navbar-collapse {
-    text-align: center; }
+    text-align: center;
+    background: #000;
+    max-height: 100%; }
+    .navbar .navbar-collapse li a {
+      color: white; }
 
 .highlight {
   background: #D1212C;
@@ -5208,6 +5212,10 @@ td.visible-print {
   color: white;
   text-transform: none; }
 
+.btn-default:hover {
+  color: white;
+  background: #8b161d !important; }
+
 .btn-cart {
   float: right !important; }
 
@@ -5221,6 +5229,10 @@ h2.title {
   border-bottom: 2px solid black;
   margin-bottom: 30px;
   text-transform: uppercase; }
+
+.inactive {
+  color: rgba(0, 0, 0, 0.6) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.6) !important; }
 
 hr {
   padding: 0;
@@ -5391,8 +5403,8 @@ figure.effect-lily:hover h3 {
   border-bottom: 1px solid black; }
 
 .outer-row {
-  padding-left: -15px;
-  padding-right: -15px; }
+  padding-left: 0;
+  padding-right: 0; }
 
 footer {
   padding-top: 50px;
@@ -5450,6 +5462,9 @@ footer {
     #nav-middle .form-control,
     #nav-middle .btn-info {
       border: 0; }
+  footer ul {
+    padding-top: 20px;
+    padding-bottom: 10px; }
   .grid figure {
     width: 100%;
     max-width: 100%;

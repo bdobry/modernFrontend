@@ -119,6 +119,11 @@ $grey-dark: rgba(0, 0, 0, 0.6);
   }
   .navbar-collapse {
     text-align: center;
+    background: #000;
+    max-height: 100%;
+    li a {
+      color: white;
+    }
   }
 }
 
@@ -167,6 +172,11 @@ $grey-dark: rgba(0, 0, 0, 0.6);
   text-transform: none;
 }
 
+.btn-default:hover {
+  color: white;
+  background: $red/1.5 !important;
+}
+
 .btn-cart {
   float: right !important;
 }
@@ -182,6 +192,11 @@ h2.title {
   border-bottom: 2px solid black;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+
+.inactive {
+  color: $grey-dark !important;
+  border-bottom-color: $grey-dark !important;
 }
 
 hr {
@@ -510,8 +525,8 @@ figure.effect-lily:hover h3 {
 }
 
 .outer-row {
-  padding-left: -15px;
-  padding-right: -15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 footer {
@@ -584,6 +599,10 @@ footer {
     .btn-info {
       border: 0;
     }
+  }
+  footer ul {
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
   .grid {
     figure {
