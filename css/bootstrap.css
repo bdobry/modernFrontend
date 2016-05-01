@@ -5083,6 +5083,9 @@ td.visible-print {
   src: url(../fonts/glyphicons-halflings-regular.eot);
   src: url(../fonts/glyphicons-halflings-regular.eot) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg) format("svg"); }
 
+* {
+  transition: all 0.2s ease; }
+
 .affix {
   top: 0;
   position: fixed;
@@ -5352,8 +5355,6 @@ figure.effect-lily:hover img {
 figure.effect-lily:hover img,
 figure.effect-lily:hover h3,
 figure.effect-lily:hover a {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s; }
 
@@ -5369,7 +5370,8 @@ figure.effect-lily:hover h3 {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  border: 0; }
+  border: 0;
+  overflow: hidden; }
   .thumbnail img {
     overflow: hidden; }
 

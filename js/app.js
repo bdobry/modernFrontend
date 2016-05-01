@@ -1,15 +1,15 @@
 (function(){
   var app = angular.module('store', []);
 
-  app.controller('StoreController', function(){
+  app.controller('CartController', function(){
     this.product = gem;
   });
 
   var gem = [
   {
-    name: 'Printed Chiffon Angular',
-    price: 61.19,
-    description: '',
+    name: 'Pebbles', 
+    quantity: 5, 
+    price: 6.95,
   },
   {
   name: 'Angular Chiffon Printed',
@@ -19,6 +19,7 @@
   ];
 
 })();
+
 
 //function CartCtrl($scope) {
 //  $scope.items = [
