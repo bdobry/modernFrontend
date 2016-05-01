@@ -170,6 +170,12 @@ $grey-dark: rgba(0, 0, 0, 0.6);
     li {
       display: inline-block;
       padding-left: 7px;
+      a {
+        color: black;
+        &:hover {
+          color: $grey-dark;
+        }
+      }
     }
     li:after {
       content: ':';
@@ -339,9 +345,9 @@ figure.effect-lily:hover a {
 }
 
 figure.effect-lily:hover h3 {
-  opacity: .5;
-  -webkit-transform: translate3d(1, 0, 0);
-  transform: translate3d(1, 0, 0);
+//  opacity: .5;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
 }
 
 .glyphicon {
