@@ -39,10 +39,9 @@
       templateUrl: 'main.html',
       controller: 'StoreController'
     }).
-    when('/product/:productId', {
+    when('/product/', {
       templateUrl: 'product.html',
       controller: 'StoreController'
-        // Expression, fx. ng-bind="productController.product"
     }).
     when('/contact', {
       templateUrl: 'contact.html',
