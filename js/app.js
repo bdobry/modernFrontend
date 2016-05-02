@@ -11,14 +11,11 @@
 
   // function to submit the form after all validation has occurred			
   $scope.submitForm = function () {
-
     // check to make sure the form is completely valid
-    if ($scope.contactForm.$valid) {
+    if ($scope.contactForm.$error) {
       alert('our form is amazing');
     }
-
   };
-
 });
 
   var gem = [
@@ -48,7 +45,7 @@
       controller: 'mainController'
     }).
     otherwise({
-      redirectTo: '/adults'
+      redirectTo: 'main.html'
     });
   });
 
