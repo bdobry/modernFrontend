@@ -5372,6 +5372,8 @@ figure.effect-lily:hover h3 {
   border-radius: 0px;
   border: 0;
   overflow: hidden; }
+  .thumbnail h4 a {
+    color: black; }
   .thumbnail img {
     overflow: hidden; }
 
@@ -5423,8 +5425,7 @@ figure.effect-lily:hover h3 {
   vertical-align: top; }
 
 .blog {
-  padding-bottom: 30px;
-  border-bottom: 1px solid black; }
+  padding-bottom: 30px; }
 
 .outer-row {
   padding-left: 0;
@@ -5432,7 +5433,9 @@ figure.effect-lily:hover h3 {
 
 footer {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: 50px;
+  border-top: 1px solid black; }
   footer .newsletter {
     padding-bottom: 30px !important;
     margin-bottom: 20px;
