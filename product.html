@@ -6,11 +6,11 @@
     </div>
 
     <div class="col-sm-6">
-      <h2 class="title">{{store.product.name}}</h2>
-      <p class="description" style="margin-bottom:50px;">{{store.product[1].description}}</p>
+      <h2 class="title">{{store.product[0].name}}</h2>
+      <p class="description" style="margin-bottom:50px;">{{store.product[0].description}}</p>
       <div class="ratings">
         <p class="lead">
-          {{store.product.price | currency}}</p>
+          {{store.product[0].price | currency}}</p>
         <div class="stars">
           <span class="glyphicon glyphicon-star"></span>
           <span class="glyphicon glyphicon-star"></span>

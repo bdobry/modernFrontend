@@ -20,14 +20,14 @@
 
   var gem = [
     {
-      sku: 1,
+      id: 0,
       name: 'Pebbles',
       description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.',
       quantity: 5,
       price: 6.95,
   },
     {
-      sku: 2,
+      id: 1,
       name: 'Angular Chiffon Printed',
       description: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.',
       price: 41.19,
@@ -39,15 +39,7 @@
       templateUrl: 'main.html',
       controller: 'StoreController'
     }).
-    when('/product/', {
-      //      controller: function StoreController($scope, $routeParams, Products) {
-      //        //this.product = Products.findById($routeParams.id);
-      //        var productId = parseInt($routeParams.id)
-      //        this.productId = $routeParams.id;
-      //        this.product = Products.find(function (product) {
-      //          return (product.id === productId);
-      //        });
-      //      },
+    when('/product/:productId', {
       templateUrl: 'product.html',
       controller: 'StoreController'
         // Expression, fx. ng-bind="productController.product"
@@ -60,7 +52,5 @@
       redirectTo: 'main.html'
     });
   });
-
-
 
 })();
