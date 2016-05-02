@@ -1,4 +1,4 @@
-brackets-source-map-demo-files
+Modern Frontend Development proj
 ==============================
 
-Demo project with precompiled source maps for Bootstrap LESS and SASS implementations
+Three days sprint of making simple website with basic AngularJS routing.
